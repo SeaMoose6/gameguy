@@ -43,7 +43,7 @@ a{
 }
 .menu{
     display: none;
-    height: 30rem;
+    height: 20rem;
     background-color: #3A5A40;
     border: solid grey 1px;
     padding: 1em;
@@ -94,6 +94,7 @@ main{
     justify-content: center;
     /* border: solid grey; */
     font-weight: 500;
+    box-shadow: 5px black;
 }
 .large{
     display: flex;
@@ -101,7 +102,7 @@ main{
     justify-self: center;
     text-align: center;
     margin: 1rem;
-    color: #DAD7CD;
+    color: #344E41;
 }
 .small{
     display: flex;
@@ -138,12 +139,19 @@ main{
     border-radius: 24px;
     text-align: center;
     background-color: rgb(112, 111, 111);
+    padding: 20px 5px;
+    justify-content: space-between;
 }
 .GamePic{
     height: 160px;
     color: white;
     border-radius: 24px;
+    width: 120px;
 }
+.GamePic:hover{
+    cursor: pointer;
+}
+
 .application{
     font-weight: 800;
     text-decoration: underline;

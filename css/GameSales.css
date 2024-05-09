@@ -43,7 +43,7 @@ a{
 }
 .menu{
     display: none;
-    height: 30rem;
+    height: 20rem;
     background-color: #3A5A40;
     border: solid grey 1px;
     padding: 1em;
@@ -91,11 +91,17 @@ main{
     border-radius: 24px;
     text-align: center;
     background-color: rgb(112, 111, 111);
+    padding: 20px 5px;
+    justify-content: space-between;
 }
 .GamePic{
     height: 160px;
     color: white;
     border-radius: 24px;
+    width: 120px;
+}
+.GamePic:hover{
+    cursor: pointer;
 }
 .application{
     font-weight: 800;
@@ -103,7 +109,7 @@ main{
 }
 .GameList{
     display: flex;
-    height: 500px;
+    height: 510px;
     background-color: rgb(66, 64, 64);
     border-radius: 12px;
     flex-direction: column;
@@ -114,8 +120,14 @@ main{
     border: solid black 1px;
     height: 50px;
     margin-top: -1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
+.item_image{
+    height: 50px;
+    width: 50px;
+}
 
 
 
