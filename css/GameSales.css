@@ -3,44 +3,6 @@ body{
     color: white;
     font-family: "Inter", sans-serif;
 }
-header{
-    display: flex;
-    background-color: #3A5A40;
-    height: 99px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5em;
-}
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: #DAD7CD;
-}
-.HomeIcon{
-    font-size: xx-large;
-    margin: 0.5rem;
-}
-.title{
-    font-size: xxx-large;
-    font-weight: 500;
-}
-.PageLinks{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 50%;
-    font-weight: 50;
-    font-size: x-large;
-}
-.hamburger{
-    display: none;
-}
-.hamburger:hover{
-    cursor: pointer;
-}
 .menu{
     display: none;
     height: 20rem;
@@ -48,64 +10,8 @@ a{
     border: solid grey 1px;
     padding: 1em;
 }
-.MenuLinks{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: xx-large;
-    justify-content: space-between;
-    height: 90%;
-}
-.link{
-    font-weight: 100;
-}
-button{
-    background-color: #8AA8B1;
-    height: 95%;
-    border-radius: 12px;
-    color: #DAD7CD;
-    border: none;
-    font-size: medium;
-    font-weight: 300;
-}
 main{
-    background-color: #A3B18A;
-    margin: 3em;
-    border-radius: 12px;
     padding: 10px;
-}
-.examples{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 3rem;
-    height: 40%;
-}
-.GameOne, .GameTwo, .GameThree{
-    /* border: solid yellow; */
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 24px;
-    text-align: center;
-    background-color: rgb(112, 111, 111);
-    padding: 20px 5px;
-    justify-content: space-between;
-}
-.GamePic{
-    height: 160px;
-    color: white;
-    border-radius: 24px;
-    width: 120px;
-}
-.GamePic:hover{
-    cursor: pointer;
-}
-.application{
-    font-weight: 800;
-    text-decoration: underline;
 }
 .GameList{
     display: flex;
@@ -150,6 +56,10 @@ footer{
     }
 }
 @media (max-width: 800px){
+    .GameOne, .GameTwo, .GameThree{
+        width: 80%;
+        margin-bottom: 25px;
+    }
     .examples{
         flex-direction: column;
         align-items: center;
@@ -160,5 +70,15 @@ footer{
     }
     .address{
         text-align: center;
+    }
+    .item_title{
+        width: 100px;
+    }
+    .item_tags{
+        padding: 5px;
+        align-self: center;
+    }
+    .item_tags, .price, .item_title{
+        font-size: small;
     }
 }

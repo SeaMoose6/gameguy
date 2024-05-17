@@ -23,6 +23,9 @@ a{
     font-size: xx-large;
     margin: 0.5rem;
 }
+.HomeIcon:hover{
+    cursor: pointer;
+}
 .title{
     font-size: xxx-large;
     font-weight: 500;
@@ -43,10 +46,11 @@ a{
 }
 .menu{
     display: none;
-    height: 20rem;
+    height: 0rem;
     background-color: #3A5A40;
     border: solid grey 1px;
     padding: 1em;
+    overflow: hidden;
 }
 .MenuLinks{
     display: flex;
@@ -63,10 +67,11 @@ button{
     background-color: #8AA8B1;
     height: 95%;
     border-radius: 12px;
-    color: #DAD7CD;
+    color: #353535;
     border: none;
     font-size: medium;
-    font-weight: 300;
+    font-weight: bold;
+    padding: 10px;
 }
 main{
     background-color: #A3B18A;
@@ -173,8 +178,30 @@ footer{
     .PageLinks{
         display: none;
     }
+    .hamburger:focus + .menu{
+        animation: ease-in .5s open_menu forwards;
+    }
+    .menu:hover{
+        animation: ease-in .5s open_menu forwards;
+    }
+    .menu{
+        display: block;
+    }
+    @keyframes open_menu{
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 20rem;
+        }
+        
+    }
 }
 @media (max-width: 800px){
+    .GameOne, .GameTwo, .GameThree{
+        width: 80%;
+        margin-bottom: 25px;
+    }
     .intro{
         flex-direction: column;
         align-items: center;

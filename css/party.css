@@ -1,0 +1,59 @@
+body{
+    background-color: #344E41;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+header{
+    display: flex;
+    background-color: #3A5A40;
+    height: 99px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+button{
+    background-color: #8AA8B1;
+    height: 95%;
+    border-radius: 12px;
+    color: #353535;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+}
+main{
+    background-color: #A3B18A;
+    margin: 3em;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 1020px){
+    .hamburger{
+        display: block;
+        font-size: xx-large;
+    }
+    .PageLinks{
+        display: none;
+    }
+}
+@media (max-width: 800px){
+    .GameOne, .GameTwo, .GameThree{
+        width: 80%;
+        margin-bottom: 25px;
+    }
+    .examples{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        flex-direction: column;
+        height: 100%;
+    }
+    .address{
+        text-align: center;
+    }
+}
