@@ -1,7 +1,7 @@
 body{
     background-color: #344E41;
     color: white;
-    font-family: "Inter", sans-serif;
+    font-family: "Ubuntu Sans Mono", monospace;
 }
 header{
     display: flex;
@@ -11,6 +11,12 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0.5em;
+}
+.arrow{
+    top: -10px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
 }
 li{
     list-style: none;
@@ -51,6 +57,7 @@ a{
     border: solid grey 1px;
     padding: 1em;
     overflow: hidden;
+    position: relative;
 }
 .MenuLinks{
     display: flex;
@@ -59,6 +66,7 @@ a{
     font-size: xx-large;
     justify-content: space-between;
     height: 90%;
+
 }
 .link{
     font-weight: 100;
@@ -90,6 +98,7 @@ main{
     height: auto;
     margin: 2rem;
     margin-top: 5rem;
+    /* box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); */
 }
 .message{
     display: flex;
@@ -126,13 +135,23 @@ main{
     justify-content: center;
     color: #3A5A40;
 }
+.learn:hover{
+    cursor: pointer;
+}
+.CTA{
+    text-align: center; 
+    margin: 1em;
+    display: none;
+}
 .examples{
     /* border: solid black; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 3rem;
-    height: 40%;
+    /* height: 17rem; */
+    overflow: none;
+    /* height: 32rem; */
 }
 .GameOne, .GameTwo, .GameThree{
     /* border: solid yellow; */
@@ -146,12 +165,34 @@ main{
     background-color: rgb(112, 111, 111);
     padding: 20px 5px;
     justify-content: space-between;
+    height: 14rem;
+}
+.GameOne:hover{
+    animation: ease-in .5s description forwards
+}
+.GameTwo:hover{
+    animation: ease-in .5s description forwards
+}
+.GameThree:hover{
+    animation: ease-in .5s description forwards
+}
+
+
+@keyframes description{
+    0%{
+        height: 14rem;
+    }
+    100%{
+        height: 32rem;
+    }
 }
 .GamePic{
     height: 160px;
     color: white;
     border-radius: 24px;
     width: 120px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .GamePic:hover{
     cursor: pointer;
